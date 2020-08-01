@@ -59,3 +59,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 
 gem 'mysql2'
+
+gem 'unicorn'
+
+gem 'unicorn-rails'

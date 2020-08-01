@@ -15,8 +15,8 @@ development:
   database: rails_tutorial
   pool: 5
   username: root
-  password:
-  host: localhost
+  password: rootroot
+  host: database-1.ccqfizxfk1q4.ap-northeast-1.rds.amazonaws.com
   
 
 # Warning: The database defined as "test" will be erased and

@@ -935,3 +935,311 @@ Completed 200 OK in 580ms (Views: 578.3ms | ActiveRecord: 0.0ms)
 
 
   [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 49.98.210.114 at 2020-07-31 06:07:33 +0000
+Cannot render console from 49.98.210.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+Mysql2::Error::ConnectionError (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)):
+  
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `connect'
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `initialize'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_handling.rb:90:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/migration.rb:554:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/callbacks.rb:98:in `run_callbacks'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 49.98.210.114 at 2020-07-31 06:07:37 +0000
+Cannot render console from 49.98.210.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+Mysql2::Error::ConnectionError (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)):
+  
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `connect'
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `initialize'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/connection_handling.rb:90:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/migration.rb:554:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/callbacks.rb:98:in `run_callbacks'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE DATABASE `rails_tutorial` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (15.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('8447966477719091190', 0)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Migrating to DeviseCreateUsers (20200725053621)
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200725053621_devise_create_users.rb:5
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20200725053621_devise_create_users.rb:39
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  ↳ db/migrate/20200725053621_devise_create_users.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200725053621')[0m
+  ↳ bin/rails:4
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-07-31 06:46:59', '2020-07-31 06:46:59')[0m
+  ↳ bin/rails:4
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('8447966477719091190')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE `rails_tutorial` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+Started GET "/" for 49.98.210.114 at 2020-07-31 07:10:19 +0000
+Cannot render console from 49.98.210.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ vendor/bundle/ruby/2.4.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.5ms)
+  Rendered partial/_header.html.erb (0.8ms)
+Completed 200 OK in 262ms (Views: 256.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 106.171.80.244 at 2020-08-01 06:24:58 +0000
+Cannot render console from 106.171.80.244! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (1.2ms)
+  Rendered partial/_header.html.erb (0.7ms)
+Completed 200 OK in 220ms (Views: 215.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:38:29 +0000
+Cannot render console from 10.0.2.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.5ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:38:33 +0000
+Cannot render console from 10.0.0.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.5ms)
+  Rendered partial/_header.html.erb (0.6ms)
+Completed 200 OK in 28ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:38:59 +0000
+Cannot render console from 10.0.2.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.5ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:39:03 +0000
+Cannot render console from 10.0.0.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.5ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:39:29 +0000
+Cannot render console from 10.0.2.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.5ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:39:33 +0000
+Cannot render console from 10.0.0.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.5ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:39:59 +0000
+Cannot render console from 10.0.2.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.5ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:40:03 +0000
+Cannot render console from 10.0.0.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.6ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:40:29 +0000
+Cannot render console from 10.0.2.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.6ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:40:33 +0000
+Cannot render console from 10.0.0.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.6ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 106.171.80.244 at 2020-08-01 06:40:59 +0000
+Cannot render console from 10.0.0.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.4ms)
+  Rendered partial/_header.html.erb (0.6ms)
+Completed 200 OK in 33ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:40:59 +0000
+Cannot render console from 10.0.2.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.7ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:41:03 +0000
+Cannot render console from 10.0.0.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.7ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:41:29 +0000
+Cannot render console from 10.0.2.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.8ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-01 06:41:33 +0000
+Cannot render console from 10.0.0.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered partial/_header.html.erb (0.6ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+

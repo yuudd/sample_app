@@ -1,0 +1,101 @@
+I, [2020-08-01T05:31:58.319208 #4497]  INFO -- : listening on addr=/home/ec2-user/sample_app/tmp/unicorn.sock fd=12
+I, [2020-08-01T05:31:58.319462 #4497]  INFO -- : listening on addr=0.0.0.0:3000 fd=13
+I, [2020-08-01T05:31:58.319570 #4497]  INFO -- : worker=0 spawning...
+I, [2020-08-01T05:31:58.319891 #4497]  INFO -- : worker=1 spawning...
+I, [2020-08-01T05:31:58.320271 #4497]  INFO -- : master process ready
+I, [2020-08-01T05:31:58.325438 #4500]  INFO -- : worker=0 spawned pid=4500
+I, [2020-08-01T05:31:58.325563 #4500]  INFO -- : Refreshing Gem list
+I, [2020-08-01T05:31:58.326726 #4502]  INFO -- : worker=1 spawned pid=4502
+I, [2020-08-01T05:31:58.326842 #4502]  INFO -- : Refreshing Gem list
+I, [2020-08-01T05:32:00.356546 #4502]  INFO -- : worker=1 ready
+I, [2020-08-01T05:32:00.357210 #4500]  INFO -- : worker=0 ready
+bundler: failed to load command: unicorn_rails (/home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails)
+ArgumentError: Already running on PID:4497 (or pid=/home/ec2-user/sample_app/tmp/unicorn.pid is stale)
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:207:in `pid='
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:139:in `start'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/bin/unicorn_rails:209:in `<top (required)>'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23:in `load'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23:in `<top (required)>'
+/home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:207:in `pid=': Already running on PID:4497 (or pid=/home/ec2-user/sample_app/tmp/unicorn.pid is stale) (ArgumentError)
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:139:in `start'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-rails-2.2.1/lib/unicorn_rails.rb:33:in `run'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/rack-2.2.3/lib/rack/server.rb:327:in `start'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/commands/server/server_command.rb:53:in `start'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/commands/server/server_command.rb:147:in `block in perform'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/commands/server/server_command.rb:142:in `tap'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/commands/server/server_command.rb:142:in `perform'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/thor-1.0.1/lib/thor/command.rb:27:in `run'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/thor-1.0.1/lib/thor/invocation.rb:127:in `invoke_command'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/thor-1.0.1/lib/thor.rb:392:in `dispatch'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/command/base.rb:69:in `perform'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/command.rb:46:in `invoke'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/railties-5.2.4.3/lib/rails/commands.rb:18:in `<main>'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.4.7/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.4.7/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.4.7/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.4.7/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.4.7/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/dependencies.rb:291:in `block in require'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/dependencies.rb:257:in `load_dependency'
+	from /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.2.4.3/lib/active_support/dependencies.rb:291:in `require'
+	from bin/rails:4:in `<main>'
+bundler: failed to load command: unicorn_rails (/home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails)
+ArgumentError: Already running on PID:4497 (or pid=/home/ec2-user/sample_app/tmp/unicorn.pid is stale)
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:207:in `pid='
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:139:in `start'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/bin/unicorn_rails:209:in `<top (required)>'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23:in `load'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23:in `<top (required)>'
+bundler: failed to load command: unicorn_rails (/home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails)
+ArgumentError: Already running on PID:4497 (or pid=/home/ec2-user/sample_app/tmp/unicorn.pid is stale)
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:207:in `pid='
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:139:in `start'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/bin/unicorn_rails:209:in `<top (required)>'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23:in `load'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23:in `<top (required)>'
+bundler: failed to load command: unicorn_rails (/home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails)
+ArgumentError: Already running on PID:4497 (or pid=/home/ec2-user/sample_app/tmp/unicorn.pid is stale)
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:207:in `pid='
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:139:in `start'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/bin/unicorn_rails:209:in `<top (required)>'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23:in `load'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23:in `<top (required)>'
+bundler: failed to load command: unicorn (/home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn)
+ArgumentError: Already running on PID:4497 (or pid=/home/ec2-user/sample_app/tmp/unicorn.pid is stale)
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:207:in `pid='
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:139:in `start'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/bin/unicorn:128:in `<top (required)>'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn:23:in `load'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn:23:in `<top (required)>'
+bundler: failed to load command: unicorn (/home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn)
+ArgumentError: Already running on PID:4497 (or pid=/home/ec2-user/sample_app/tmp/unicorn.pid is stale)
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:207:in `pid='
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:139:in `start'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/bin/unicorn:128:in `<top (required)>'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn:23:in `load'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn:23:in `<top (required)>'
+bundler: failed to load command: unicorn_rails (/home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails)
+ArgumentError: Already running on PID:4497 (or pid=/home/ec2-user/sample_app/tmp/unicorn.pid is stale)
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:207:in `pid='
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/lib/unicorn/http_server.rb:139:in `start'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/gems/unicorn-5.6.0/bin/unicorn_rails:209:in `<top (required)>'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23:in `load'
+  /home/ec2-user/sample_app/vendor/bundle/ruby/2.4.0/bin/unicorn_rails:23:in `<top (required)>'
+I, [2020-08-01T06:07:04.455174 #4497]  INFO -- : reaped #<Process::Status: pid 4500 exit 0> worker=0
+I, [2020-08-01T06:07:04.455277 #4497]  INFO -- : reaped #<Process::Status: pid 4502 exit 0> worker=1
+I, [2020-08-01T06:07:04.455346 #4497]  INFO -- : master complete
+I, [2020-08-01T06:07:45.784514 #5613]  INFO -- : unlinking existing socket=/home/ec2-user/sample_app/tmp/unicorn.sock
+I, [2020-08-01T06:07:45.784699 #5613]  INFO -- : listening on addr=/home/ec2-user/sample_app/tmp/unicorn.sock fd=10
+I, [2020-08-01T06:07:45.784843 #5613]  INFO -- : listening on addr=0.0.0.0:3000 fd=11
+I, [2020-08-01T06:07:45.784924 #5613]  INFO -- : worker=0 spawning...
+I, [2020-08-01T06:07:45.787293 #5613]  INFO -- : worker=1 spawning...
+I, [2020-08-01T06:07:45.788889 #5613]  INFO -- : master process ready
+I, [2020-08-01T06:07:45.793462 #5616]  INFO -- : worker=0 spawned pid=5616
+I, [2020-08-01T06:07:45.793594 #5616]  INFO -- : Refreshing Gem list
+I, [2020-08-01T06:07:45.796473 #5618]  INFO -- : worker=1 spawned pid=5618
+I, [2020-08-01T06:07:45.796602 #5618]  INFO -- : Refreshing Gem list
+I, [2020-08-01T06:07:46.977773 #5618]  INFO -- : worker=1 ready
+I, [2020-08-01T06:07:46.978084 #5616]  INFO -- : worker=0 ready
+I, [2020-08-01T06:42:47.282524 #5613]  INFO -- : reaped #<Process::Status: pid 5616 exit 0> worker=0
+I, [2020-08-01T06:42:47.282625 #5613]  INFO -- : reaped #<Process::Status: pid 5618 exit 0> worker=1
+I, [2020-08-01T06:42:47.282689 #5613]  INFO -- : master complete
